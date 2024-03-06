@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: fonte1;
+    src: url(fonte/Story\ Night.ttf);
+    
+    }
+
+@font-face {
+    font-family: fonte2;
+    src: url(fonte/Gatrich.otf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://i.pinimg.com/736x/f8/5e/0a/f85e0a5081593a0685d860d842f65f0e.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+    
+    
+}
+
+.imagem img{
+    width: 30%;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    border-radius: 2em;
+    margin: 20px;
+    margin-top: 3em;
+    transition: all ease 1s;
+}
+
+.imagem img:hover{
+    box-shadow: 0 0 20px red;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #000000;
+    font-family: fonte1 ;
+}
+
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(160, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(160, 0, 0);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10em;
+    margin-top: 2em;
+}
+
+button:hover{
+    box-shadow: 0 0 15px rgb(255, 0, 0);
+}
+
+/* PARALLAX  */
+
+h1, h2{
+    color: rgb(255, 196, 0);
+    text-shadow: 0 0 20px  rgb(0, 0, 0);
+    font-family: fonte2;
+
+}
+
+.wrapper{
+    margin-top: 3em;
+width: 100%;
+margin: 0;
+margin: auto;
+}
+
+
+.container{
+width: 100%;
+max-width: 100%;
+margin: 0 auto;
+padding: 0;
+}
+
+section.modulo h2{
+margin-bottom: 20px;
+font-size: 3em;
+text-align: center;
+
+}
+
+section.modulo.content{
+padding: 40px 0;
+background: rgb(0, 0, 0);
+
+}
+
+section.modulo.parallax{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100vh;
+width: 100%;
+position: relative;
+overflow: hidden;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+section.modulo.parallax:after{
+content: "";
+height: 100%;
+width: 100%;
+z-index: 8; 
+position: absolute;
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0, 0,0,0) 50%, rgb(0, 0, 0)) ;
+
+}
+
+section.modulo.parallax-1{
+background-image: url(https://2.bp.blogspot.com/-V0urskhGllI/XJ3XFWaKiDI/AAAAAAAAEiE/RFwLcd8L56QHE5QGMU7qWEragOrp2UBLQCKgBGAs/w4096-h2304-c/wolfenstein-youngblood-uhdpaper.com-4K-7.jpg)
+}
+
+
+
+/* cards */
+
+.card{
+padding: 2em;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2em;
+margin-bottom: 5em;
+background-color:#000000;
+margin-bottom: 5em;
+
+
+
+}
+
+.card h3{
+margin-bottom: 2em;
+font-family: fonte2;
+color: rgb(255, 196, 0);
+
+}
+
+.card p{
+    font-size: 2em;
+    color: white;
+    font-family: fonte1 ;
+}
+
+.card img{
+width: 100%;
+}
+
+img{
+    width: 100%;
+    margin-top: 5em;
+
+}
+
+.card:nth-child(even) img{
+order: 2;
+}
+
+.card div{
+    padding: 2em;
+}
+
+
+/* final card */
+
+/* texto */
+
+.texto h2{
+    font-size: 2em;
+    padding: 1em;
+    color: aliceblue;
+    
+
+}
+
+.texto p{
+    font-size: 1.3em;
+    box-shadow: 2px 2px 24px #626060 ;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px black;
+    letter-spacing: 3px;
+    padding:30px;
+    text-align: center;
+    
+}
+
+/* final texto */
+
+/* imagem */
+.galeria {
+    
+    margin: 2em;
+    display: flex;
+    height: 25em;
+    gap: 1em;
+    transition: all ease 5s;
+
+}
+
+.galeria div{
+    margin-top: 2em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-position: 100%; */
+   flex: 1;
+   transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.galeria div:hover{
+    flex:2;
+    box-shadow: 0 0 20px rgb(158, 0, 0);
+    
+}
+
+.galeria:hover div:not(:hover){
+    filter: opacity(20%);
+}
+
+
+/* final imagem */
+
+footer{
+    font-size: 1em;
+    font-family: fonte;
+    box-shadow: 2px 2px 40px #c20701 ;
+    margin: 4em;
+    padding: 1em;
+    color: aliceblue;
+}
